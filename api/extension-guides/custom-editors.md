@@ -234,7 +234,7 @@ Editable custom editors are implemented by `CustomEditorProvider`. This interfac
 
 Changes to a editable custom document are expressed through edits. An edit can be anything from a text change, to an image rotation, to reordering a list. VS Code leaves the specifics of what an edit does entirely up to your extension, but VS Code does need to know when an edit takes places. Editing is how VS Code marks documents as dirty, which in turn enables auto save and back ups.
 
-Whenever a user makes an edit in any of the webviews for your custom editor, your extension must fire a `onDidChangeCustomDocument` event from its `CustomEditorProvider`. The `onDidChangeCustomDocument` event can fired two event types depending on your custom editor implementation: `CustomDocumentContentChangeEvent` and `CustomDocumentEditEvent`.
+Whenever a user makes an edit in any of the webviews for your custom editor, your extension must fire a `onDidChangeCustomDocument` event from its `CustomEditorProvider`. The `onDidChangeCustomDocument` event can fire two event types depending on your custom editor implementation: `CustomDocumentContentChangeEvent` and `CustomDocumentEditEvent`.
 
 **CustomDocumentContentChangeEvent**
 
